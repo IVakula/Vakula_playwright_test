@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test:headless": "playwright test",
     "test:headed": "playwright test --headed",
     "test:headed:safari": "playwright test --headed --project=webkit",
     "test:headed:chromium": "playwright test --headed --project=chromium",
-    "test:headed:chrome": "playwright test --headed --project='Google Chrome' --workers=1"
+    "test:headed:chrome": "playwright test --headed --project='Google Chrome' --workers=1",
+    "report": "npx playwright show-report"
   },
   "author": "",
   "license": "ISC",
