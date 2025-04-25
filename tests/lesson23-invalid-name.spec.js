@@ -10,7 +10,7 @@ test.describe('Registration with invalid data in the Name field', () => {
         mainPage = new MainPage(page);
         registrationForm = new RegistrationForm(page);
 
-        await page.goto('https://qauto.forstudy.space/'); 
+        await page.goto(''); 
         await expect(page).toHaveTitle('Hillel Qauto'); 
     });
 

@@ -14,7 +14,7 @@ test.describe('Tests with valid credentials', () => {
         garagePage = new GaragePage(page);
         signInForm = new SignInForm(page);
 
-        await page.goto('https://qauto.forstudy.space/');
+        await page.goto('');
         await expect(page).toHaveTitle('Hillel Qauto');
     });
 
