@@ -40,6 +40,7 @@ export default defineConfig({
   },
 
   /* Configure projects for major browsers */
+  
   projects: [
     {
       name: 'chromium',
@@ -54,6 +55,12 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
+    },
+    { name: 'setup', testMatch: /.*\.setup\.js/, testDir: './setup' },
+    {
+      name: 'Google Chrome Setup',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome', storageState: 'session-storage.json' },
+      dependencies: ['setup']
     },
 
     /* Test against mobile viewports. */

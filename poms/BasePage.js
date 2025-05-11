@@ -32,4 +32,12 @@ export default class BasePage {
     await expect(locator).toBeVisible();
     await locator.clear();
   };
+
+  async selectValueByText(locator, text){
+    await locator.selectOption(text);
+  };
+
+  async checkElementByText(locator, text){
+    await expect(locator).toHaveText(text);
+  };
 }
