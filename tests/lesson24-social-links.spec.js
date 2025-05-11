@@ -6,7 +6,7 @@ let socialLinks;
 test.describe('Checking Contacts menu', () => {
     test.beforeEach(async ({ page }) => {
         socialLinks = new SocialLinks(page);
-        await page.goto('https://qauto.forstudy.space/');
+        await page.goto('');
         await expect(page).toHaveTitle('Hillel Qauto');
     });
 
