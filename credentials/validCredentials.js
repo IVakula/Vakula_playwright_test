@@ -3,5 +3,10 @@ export const validUserRegistration = {
     lastName: "Petrenko",
     prefixEmail: "aqa",
     email: "olegpetr@gmail.com",
-    password: "123456aA"
+    password: "123456aA",
+}
+export const validAddingCar={
+    brand: "BMW",
+    model: "3",
+    mileage: "155"
 }

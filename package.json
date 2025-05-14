@@ -10,6 +10,7 @@
     "test:headed:safari": "playwright test --headed --project=webkit",
     "test:headed:chromium": "playwright test --headed --project=chromium",
     "test:headed:chrome": "playwright test --headed --project='Google Chrome' --workers=1",
+    "test:headed:chrome:grep:garage-setup": "playwright test --headed --project='Google Chrome Setup' --workers=1 --grep='@garage-setup'",
     "report": "npx playwright show-report"
   },
   "author": "",
