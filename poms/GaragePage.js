@@ -14,10 +14,20 @@ export default class GaragePage extends BasePage {
     this.popupAddButton = this.page.locator('app-add-car-modal button[class="btn btn-primary"]');
     this.carInGarage = this.page.locator('div[class="car jumbotron"]');
     this.addedCarName = this.page.locator('app-car div p[class="car_name h2"]')
+    this.profileButton = this.page.locator('a[routerlink="profile"]');
+    this.profileName = this.page.locator('//p[contains( @class, "profile_name")]');
   };
 
   async checkButtonAddCarAndClick() {
     await this.checkButtonAndClick(this.addCarButton);
+  };
+
+  async checkButtonProfileAndClick() {
+    await this.checkButtonAndClick(this.profileButton);
+  };
+
+  async checkProfileName(text) {
+    await this.checkElementByText(this.profileName, text);
   };
 
   async selectBrand(text) {
